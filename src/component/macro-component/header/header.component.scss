@@ -1,0 +1,59 @@
+//bg-header: linear-gradient(to right, red, green);
+$text-center: center;
+$flex: flex;
+$content: space-between;
+$align: center;
+$border1: 1px solid red;
+$border2: 1px solid purple;
+$border3: 1px solid green;
+
+#nav_bar, .logo, .title_page, .login {
+    display: $flex;
+    justify-content: $align;
+    align-items: $align;
+}
+
+#nav_bar {
+    height: 100px;
+    & .logo > a > img {
+        width: 150px;
+        height: 100px;
+    }
+    & div:first-child,
+    div:last-child {
+        width: 150px;
+        height: 100%;
+    }
+    & div:nth-child(2) {
+        width: calc(100% - 300px);
+        height: 100%;
+    }
+
+    & .login {
+        & li {
+            list-style: none;
+            text-align: center;
+            & a {
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+h2 {
+    text-align: $text-center;
+    font-size: 45px;
+}
+
+/* #region debug */
+
+#nav_bar,
+.title_page,
+.login,
+.logo {
+    border: $border3;
+}
+
+/* #endregion debug */
