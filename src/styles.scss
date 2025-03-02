@@ -1,6 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-*{
+
+
+/* #region palette */
+
+
+$primary: #f2f2f2;
+$secondary: #261b1d;
+$third: #3d3e40;
+$fourth: #979da6;
+$fifth: #d7d7d9;
+
+
+/* #endregion palette */
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+

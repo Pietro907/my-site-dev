@@ -1,13 +1,14 @@
+<div *ngIf="isRoot" id="page_login_site">
+    <div class="container_title_greatings">
+        <h1 class="title_greatings">Benvenuto</h1>
+        <h1 class="title_greatings_2">Benvenuto</h1>
+    </div>
 
-<div id="page_login_site">
-    
-<div class="container_title_greatings">
-    <h1 class="title_greatings">Benvenuto</h1>
-    <h1 class="title_greatings_2">Benvenuto</h1>
+    <a>
+        <img class="image_login" src="https://picsum.photos/800/200" alt="">
+    </a>
 
-
+    <p class="text"><a [routerLink]="['/projects']">Text specifica del titolo</a></p>
 </div>
-    <img class="image_login" src="https://picsum.photos/560/500" alt="">
-    <p class="text"><a href="/">Text specifica del titolo</a></p>
 
-</div>
+<router-outlet *ngIf="!isRoot">

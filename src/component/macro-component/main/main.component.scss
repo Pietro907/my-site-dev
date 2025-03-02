@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 $bg-header: linear-gradient(to right, red, green);
 $text-center: center;
 
@@ -8,22 +10,21 @@ $text-center: center;
 
 .title_greatings, .text, .title_greatings_2 {
     text-align: $text-center;
-    
 }
 .container_title_greatings {
     position: relative;
 }
 .title_greatings_2{
-    color: white;
+    color: $primary;
     position: absolute;
     bottom: 27px;
     left: 50.15%;
     transform: translateX(-50%);
 }
 #page_login_site{
-    background: $bg-header;
+    background: linear-gradient(to left, $secondary, $fourth);
     height: 100%;
-   & .title_greatings, .image_login, .text{
+    & .title_greatings, .image_login, .text{
     display: block;
     transform: translateX(-50%);
     margin: 0 0 0 50%;
@@ -40,4 +41,9 @@ $text-center: center;
         text-decoration: none;
         color: black;
     }
+}
+
+.image_login {
+    width: 500px;
+    height: 400px;
 }
