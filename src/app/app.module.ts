@@ -2,17 +2,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { MainComponent } from '../component/macro-component/main/main.component';
-import { ProjetsComponent } from '../component/projets/projets.component';
+import { TableProjectsComponent } from '../component/table-projects/table-projects.component';
+import { CardProjectsComponent } from '../component/card-projects/card-projects.component';
+
 
 @NgModule({
   declarations: [
   ],
   imports: [
     AppComponent,
-    MainComponent,
-    ProjetsComponent,
     BrowserModule,
+    TableProjectsComponent,
+    CardProjectsComponent,
   ],
   providers: [],
   bootstrap: []

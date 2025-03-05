@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { HeaderComponent } from "../component/macro-component/header/header.component";
-import { MainComponent } from "../component/macro-component/main/main.component";
-import { FirstPageComponent } from "../component/first-page/first-page/first-page.component";
+import { RouterLink, RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
-  imports: [FirstPageComponent],
+  imports: [RouterOutlet,RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

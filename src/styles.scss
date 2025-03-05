@@ -4,11 +4,11 @@
 /* #region palette */
 
 
-$primary: #f2f2f2;
-$secondary: #261b1d;
+$bg-primary: #182E58;
+$bg-secondary: #07598D;
 $third: #3d3e40;
-$fourth: #979da6;
-$fifth: #d7d7d9;
+$text: #261B1D;
+$text-wh: #F2F3F4;
 
 
 /* #endregion palette */
@@ -17,5 +17,6 @@ $fifth: #d7d7d9;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: $text;
 }
 

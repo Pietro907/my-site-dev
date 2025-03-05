@@ -1,6 +1,12 @@
+
+@import '../../styles.scss';
+
 .title_page{
     text-align: center;
-    margin: 2rem 0;
+    padding: 2rem 0;
+    & h2 {
+        color:$text-wh;
+    }
 }
 .d_flex_center {
     display: flex;
@@ -8,6 +14,9 @@
 }
 .table-responsive{
     margin: 0 3rem;
+    & tr {
+        background-color: white;
+    }
 }
 .table-responsive .table {
     & thead tr th, tbody tr td{
@@ -23,14 +32,32 @@
         width: 250px;
     }
     & tr td:nth-child(6){
-        width: 300px;
+        width: 350px;
+    }
+    td {
+        height: 100px;
+        text-align: center;
+        & img {
+            width: 100px;
+            height: 100px;
+        }
     }
 }
 
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & a {
+        padding: 1rem 0.5rem 0;
+        color: $text-wh;
+        text-decoration: none;
+    }
+}
 /* #region debug */
 
 .debug_border{
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 /* #endregion debug */
