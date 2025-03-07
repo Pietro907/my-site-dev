@@ -3,6 +3,12 @@
 $bg-header: linear-gradient(to right, red, green);
 $text-center: center;
 
+#home{
+    display: flex;
+    transform: translateX(-50%);
+    margin: 0 0 0 50%;
+}
+
 .title_greatings,
 .title_greatings_2 {
     font-size: 60px;
@@ -24,28 +30,22 @@ $text-center: center;
     transform: translateX(-50%);
 }
 #page_login_site {
-    background: linear-gradient(to left, $bg-primary, $bg-secondary);
     height: 100%;
-    & .title_greatings,
-    .image_login {
-        display: block;
-        transform: translateX(-50%);
-        margin: 0 0 0 50%;
-    }
 }
 
 .title_greatings {
     padding: 1.5rem 0;
 }
-.link_page{
+.link_page {
     margin: 2rem 0 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    & .text:first-child{
+    & .text:first-child {
         margin: 0 1rem 0 0;
     }
-    & .text:last-child{
+    & .text:last-child {
         margin: 0 0 0 1rem;
     }
 }
@@ -58,9 +58,33 @@ $text-center: center;
     }
 }
 
-.image_login {
+.img_welcome {
+    display: block;
     width: 500px;
     height: 400px;
-    border-radius: 20px;
+    border-bottom: 10px solid $text-wh;
+    border-bottom-left-radius: 15px;
+    //border-right: 10px solid red;
+    position: relative;
+    & .which_one {
+        color: $text-wh;
+        position: absolute;
+        top: 57.6%;
+        left: 30.5%;
+        animation: pulse 2s infinite;
+    }
+    & .image_login {
+        width: 500px;
+        height: 400px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
 }
-
+@keyframes pulse {
+    from{
+        opacity: 0;
+    }
+    to{ 
+        opacity: 1;
+    }
+}

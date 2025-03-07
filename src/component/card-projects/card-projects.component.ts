@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { log } from 'console';
 
 @Component({
   selector: 'app-card-projects',
@@ -10,3 +11,5 @@ import { RouterLink } from '@angular/router';
 export class CardProjectsComponent {
 
 }
+
+
