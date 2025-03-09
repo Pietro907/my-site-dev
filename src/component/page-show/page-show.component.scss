@@ -1,0 +1,88 @@
+@import "../../styles.scss";
+
+.container_show_card {
+    position: relative;
+    * {
+        color: $text-wh;
+    }
+    & .img_project {
+        width: 600px;
+        height: 350px;
+        border: 10px solid;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        border-radius: 15px;
+    }
+    & .astronaut {
+        width: 600px;
+        height: 600px;
+        border-bottom: 10px solid $text-wh;
+        border-bottom-left-radius: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        & .img_of_img {
+            height: 598px;
+        }
+    }
+
+    & .signboard {
+        width: 230px;
+        position: absolute;
+        top: 150px;
+        right: 300px;
+        & .title_project {
+            margin: -2rem 0 2rem 0;
+        }
+        & ul {
+            padding: 0 0 0 2rem;
+        }
+        & .icon_card {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            /* top: -65px;
+            left: -85px; */
+            top: -90px;
+            right: 35px;
+            /* bottom: -125px;
+            left: -50px; */
+            /* bottom: -100px;
+            right: -45px; */
+        }
+        & .author {
+            margin: 2rem 0 0;
+        }
+    }
+    .description_project {
+        width: 600px;
+        height: 180px;
+        //border: 1px solid;
+        position: absolute;
+        top: 400px;
+        left: 50px;
+    }
+    .readme {
+        position: absolute;
+        top: 400px;
+        right: 610px;
+        & .icon_readme {
+            width: 64px;
+            height: 64px;
+            margin: 0.5rem 0;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .btn_back{
+        text-decoration: none;
+        border: 2px solid;
+        border-radius: 15px;
+        box-shadow: 0px 1px 10px 1px $text-wh;
+        padding: 0.5rem;
+        position: absolute;
+        top: 590px;
+        left: 50px;
+    }
+}
