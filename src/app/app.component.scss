@@ -23,8 +23,11 @@ main {
     align-items: $align;
     height: 100%;
     overflow: hidden;
+    border-top: 2px solid $text-wh;
+    border-bottom: 2px solid $text-wh;
 
-    & div:first-child, div:last-child {
+
+    /* & div:first-child, div:last-child {
         width: 150px;
         height: 150px;
         border: 1px solid $text-wh;
@@ -35,23 +38,30 @@ main {
             border-radius: 30%;
             padding: 0.5rem;
         }
-    }
-    & div:nth-child(2) {
+    } */
+   /*  & div:nth-child(2) {
         border: 1px solid $text-wh;
         border-left: 1px;
         border-right: 1px;
         width: calc(100% - 150px);
         height: 100%;
-    }
+    } */
 
+    & .logo a img {
+        width: 150px;
+        height: 150px;
+        border-radius: 30%;
+        padding: 0.5rem;
+
+    }
 }
 .container_title_page{
     position: relative;
+
 }
 .title_page{
-    bottom: 50%;
-    left: 0;
-    transform: translateY(100%);
+
+    transform: translateY(10%);
 }
 .title_page2{
     width: 100%;
