@@ -1,7 +1,9 @@
 <div class="pages">
-    <a routerLink="/home">Home</a>
-    <a routerLink="/table-projects">Table-Projects</a>
-    <a routerLink="/card-projects">Card Projects</a>
+    <a [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/biography']" [routerLinkActive]="['red']">Biography</a>
+    <a [routerLink]="['/table-projects']" [routerLinkActive]="['red']">Table Projects</a>
+    <a [routerLink]="['/card-projects']" [routerLinkActive]="['red']">Card Projects</a>
+    <a [routerLink]="['/draw-code']" [routerLinkActive]="['red']">Draw Code</a>
 </div>
 
 <div class="container_projects">
@@ -12,7 +14,7 @@
                     <h2 class="title_card">Gelateria</h2>
                     <img src="../../assets/img/projects/gelateria.jpg" alt="">
                     <h5>Tecnologie: <span>Angular, Typescript</span></h5>
-                    <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-logo.png" alt="logo github"></a></h5>
+                    <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                     <p>descrizione breve</p>
                     <h6>autori: <span><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907">Pietro907</a></span></h6>
                 </div>
@@ -24,7 +26,7 @@
                 <h2>titolo</h2>
                 <img src="../../assets/gelateria.jpg" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-logo.png" alt="logo github"></a></h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -36,7 +38,7 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-logo.png" alt="logo github"></a></h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -48,7 +50,7 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-logo.png" alt="logo github"></a></h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -60,7 +62,7 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-logo.png" alt="logo github"></a></h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -72,7 +74,79 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-logo.png" alt="logo github"></a></h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
+                <p>descrizione breve</p>
+                <h6>autori</h6>
+            </div>
+            </a>
+        </div>
+        <div class="col">
+            <a routerLink="show">
+                <div class="card ani_visible6">
+                <h2>titolo</h2>
+                <img src="https://picsum.photos/100/80" alt="">
+                <h5>tecnologie</h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
+                <p>descrizione breve</p>
+                <h6>autori</h6>
+            </div>
+            </a>
+        </div>
+        <div class="col">
+            <a routerLink="show">
+                <div class="card ani_visible6">
+                <h2>titolo</h2>
+                <img src="https://picsum.photos/100/80" alt="">
+                <h5>tecnologie</h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
+                <p>descrizione breve</p>
+                <h6>autori</h6>
+            </div>
+            </a>
+        </div>
+        <div class="col">
+            <a routerLink="show">
+                <div class="card ani_visible6">
+                <h2>titolo</h2>
+                <img src="https://picsum.photos/100/80" alt="">
+                <h5>tecnologie</h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
+                <p>descrizione breve</p>
+                <h6>autori</h6>
+            </div>
+            </a>
+        </div>
+        <div class="col">
+            <a routerLink="show">
+                <div class="card ani_visible6">
+                <h2>titolo</h2>
+                <img src="https://picsum.photos/100/80" alt="">
+                <h5>tecnologie</h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
+                <p>descrizione breve</p>
+                <h6>autori</h6>
+            </div>
+            </a>
+        </div>
+        <div class="col">
+            <a routerLink="show">
+                <div class="card ani_visible6">
+                <h2>titolo</h2>
+                <img src="https://picsum.photos/100/80" alt="">
+                <h5>tecnologie</h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
+                <p>descrizione breve</p>
+                <h6>autori</h6>
+            </div>
+            </a>
+        </div>
+        <div class="col">
+            <a routerLink="show">
+                <div class="card ani_visible6">
+                <h2>titolo</h2>
+                <img src="https://picsum.photos/100/80" alt="">
+                <h5>tecnologie</h5>
+                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>

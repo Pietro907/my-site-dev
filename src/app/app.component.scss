@@ -18,9 +18,9 @@ main {
 }
 
 #nav_bar {
-    display: $flex;
-    justify-content: $align;
-    align-items: $align;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     overflow: hidden;
     border-top: 2px solid $text-wh;

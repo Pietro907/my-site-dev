@@ -6,12 +6,14 @@
     justify-content: center;
     align-items: center;
     & a {
-        padding: 1rem 0.5rem;
+        padding: 1.5rem 0.5rem 0.5rem;
         color: $text-wh;
         text-decoration: none;
+        font-size: 20px;
     }
 }
 .container_projects {
+    width: 100%;
     height: calc(100% - 50px);
     position: relative;
     
@@ -25,12 +27,23 @@
     }
 }
 .row {
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    overflow-y: auto;
+    overflow-y: scroll;
+    padding: 1rem;
+}
+.row::-webkit-scrollbar{
+    width: 0px;
+}
+.row::-webkit-scrollbar-track{
+    background: $text-wh;
+}
+.row::-webkit-scrollbar-thumb{
+    background: $secondary-color-shadow;
 }
 .col {
     width: 450px;
@@ -56,9 +69,10 @@ a {
         position: relative;
 
         &.card:hover {
-            transform: scale(1.1);
             animation: scale 1s;
             background: $secondary-color;
+            transform: scale(1.2);
+            z-index: 1;
         }
 
         @keyframes scale {
@@ -69,7 +83,7 @@ a {
             }
             to {
                 opacity: 1;
-                transform: scale(1.1);
+                transform: scale(1.2);
                 background: $secondary-color;
             }
         }
@@ -92,19 +106,19 @@ a {
     animation: visible 1s;
 }
 .ani_visible2 {
-    animation: visible 1.2s;
+    animation: visible 1s;
 }
 .ani_visible3 {
-    animation: visible 1.4s;
+    animation: visible 1s;
 }
 .ani_visible4 {
-    animation: visible 1.6s;
+    animation: visible 1s;
 }
 .ani_visible5 {
-    animation: visible 1.8s;
+    animation: visible 1s;
 }
 .ani_visible6 {
-    animation: visible 2s;
+    animation: visible 1s;
 }
 
 @keyframes visible {
@@ -116,4 +130,5 @@ a {
     }
 }
 
+.red{color: red !important;}
 

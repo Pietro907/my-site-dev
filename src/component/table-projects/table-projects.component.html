@@ -1,14 +1,16 @@
-<main>
+<div class="container_table">
 
     <div class="pages">
         <a [routerLink]="['/home']">Home</a>
-        <a routerLink="/table-projects">Table-Projects</a>
-        <a routerLink="/card-projects">Card Projects</a>
+        <a [routerLink]="['/biography']" [routerLinkActive]="['red']">Biography</a>
+        <a [routerLink]="['/table-projects']" [routerLinkActive]="['red']">Table Projects</a>
+        <a [routerLink]="['/card-projects']" [routerLinkActive]="['red']">Card Projects</a>
+        <a [routerLink]="['/draw-code']" [routerLinkActive]="['red']">Draw Code</a>
     </div>
 
-    <div class="title_page">
+<!--     <div class="title_page">
         <h2>Progetti</h2>
-    </div>
+    </div> -->
     <div class="table-responsive d_flex_center debug_border">
         <table class="table table-primary">
             <thead>
@@ -26,7 +28,7 @@
                     <td class="debug_border" scope="row">Gelateria</td>
                     <td class="debug_border">Vetrina di una gelateria, con descrizione dell'attività, inserimento dei
                         prodotti e geolocalizzazione con Google Map</td>
-                    <td class="debug_border"><img src="public/img/img-projects/gelateria.jpg" alt=""></td>
+                    <td class="debug_border"><img src="../../assets/img/projects/gelateria.jpg" alt=""></td>
                     <td class="debug_border">Pietro Paolo Puri</td>
                     <td class="debug_border">Angular v18, Typescript</td>
                     <td class="debug_border"><a target="_blank" rel="noopener noreferrer"
@@ -46,4 +48,4 @@
             </tbody>
         </table>
     </div>
-</main>
+</div>
