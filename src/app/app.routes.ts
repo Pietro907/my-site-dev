@@ -13,10 +13,10 @@ import { DrawCodeComponent } from '../component/draw-code/draw-code.component';
 
 export const routes: Routes = [
    {path: '', redirectTo: '/home', pathMatch: 'full'},
-   {path: 'home', component: HomeComponent},
+   {path: 'home', component: HomeComponent, children: []},
    {path: 'table-projects', component: TableProjectsComponent},
    {path: 'card-projects', component: CardProjectsComponent},
-   {path: 'card-projects/show', component: PageShowComponent},
+   {path: 'card-projects/show/:repoName', component: PageShowComponent},
    {path: 'biography', component: BiographyComponent},
    {path: 'draw-code', component: DrawCodeComponent},
 ];

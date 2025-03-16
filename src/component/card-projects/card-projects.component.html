@@ -6,7 +6,7 @@
     <a [routerLink]="['/draw-code']" [routerLinkActive]="['red']">Draw Code</a>
 </div>
 
-<div class="container_projects">
+<!-- <div class="container_projects">
     <div class="row">
         <div class="col">
             <a routerLink="show">
@@ -14,19 +14,18 @@
                     <h2 class="title_card">Gelateria</h2>
                     <img src="../../assets/img/projects/gelateria.jpg" alt="">
                     <h5>Tecnologie: <span>Angular, Typescript</span></h5>
-                    <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
+
                     <p>descrizione breve</p>
                     <h6>autori: <span><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907">Pietro907</a></span></h6>
                 </div>
             </a>
         </div>
-        <div class="col">
+        <div class="col" **ngFor="let repo of repoList">
             <a routerLink="show">
                 <div class="card ani_visible2">
-                <h2>titolo</h2>
+                <h2>{{repo}}</h2>
                 <img src="../../assets/gelateria.jpg" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -34,11 +33,10 @@
         </div>
         <div class="col">
             <a routerLink="show">
-                <div class="card ani_visible3">
-                <h2>titolo</h2>
+                <div class="card ani_visible3"> 
+                <h2></h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -50,7 +48,6 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -62,7 +59,6 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -74,7 +70,6 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -86,7 +81,6 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -98,7 +92,6 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -110,7 +103,6 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -122,7 +114,6 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -134,7 +125,6 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -146,7 +136,6 @@
                 <h2>titolo</h2>
                 <img src="https://picsum.photos/100/80" alt="">
                 <h5>tecnologie</h5>
-                <h5><a target="_blank" rel="noopener noreferrer" href="https://github.com/Pietro907/gelateria"><img class="icon_card" src="../../assets/img/github-cloud.png" alt="logo github"></a></h5>
                 <p>descrizione breve</p>
                 <h6>autori</h6>
             </div>
@@ -155,5 +144,21 @@
 
     </div>
     <img class="img_bg" src="../../assets/img/astronauta/astronauta-contempla.png" alt="">
-</div>
+</div> -->
 
+<div class="container_projects">
+    <div class="row">
+        <div class="col" *ngFor="let repo of repoList">
+            <a [routerLink]="['/card-projects/show', repo.name]">
+                <div class="card ani_visible">
+                    <h2 class="title_card">{{ repo.name }}</h2>
+                    <h6>Autore:
+                        <span>
+                            {{ repo.owner.login }}
+                        </span>
+                    </h6>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

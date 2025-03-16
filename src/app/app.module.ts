@@ -7,6 +7,7 @@ import { CardProjectsComponent } from '../component/card-projects/card-projects.
 import { PageShowComponent } from '../component/page-show/page-show.component';
 import { BiographyComponent } from '../component/biography/biography.component';
 import { DrawCodeComponent } from '../component/draw-code/draw-code.component';
+import { RepoListComponent } from '../component/repo-list/repo-list.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { DrawCodeComponent } from '../component/draw-code/draw-code.component';
     PageShowComponent,
     BiographyComponent,
     DrawCodeComponent,
+    RepoListComponent,
   ],
   providers: [],
   bootstrap: []

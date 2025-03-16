@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { RepoListComponent } from "../component/repo-list/repo-list.component";
 
 
 @Component({
