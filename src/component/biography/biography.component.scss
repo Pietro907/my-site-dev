@@ -29,24 +29,24 @@
         position: absolute;
         top: 430%;
         right: 7.6%;
+    }
+    & a {
+        color: styles.$secondary-color;
+        text-decoration: none;
+        text-align: center;
+        animation: pulse 4s infinite;
+    }
+    @keyframes pulse {
+        0% {
+            opacity: 0;
         }
-        & a {
-            color: styles.$secondary-color;
-            text-decoration: none;
-            text-align: center;
-            animation: pulse 4s infinite;
+        50% {
+            opacity: 1;
         }
-        @keyframes pulse {
-            0%{
-                opacity: 0;
-            }
-            50%{ 
-                opacity: 1;
-            }
-            100%{
-                opacity: 0;
-            }
+        100% {
+            opacity: 0;
         }
+    }
 }
 .description {
     margin: 2.5rem auto;
@@ -59,59 +59,65 @@
     & p {
         color: styles.$text-wh;
     }
-    & span{
+    & span {
         color: styles.$secondary-color;
         text-decoration: underline;
         font-weight: 900;
     }
 
-    & .title_list{
+    & .title_list {
         position: absolute;
-        top: 8%;
+        top: 18%;
         left: -40%;
         margin: 0 1rem;
         font-size: 25px;
+        box-shadow: 0 0 5px 5px styles.$bg-wh-op;
+        background: styles.$bg-wh-op;
+        border-radius: 15px;
+        padding: 0 0.5rem;
     }
-    & .list_skills{
+    & .list_skills {
         width: 300px;
         height: 155px;
         font-size: 20px;
         position: absolute;
-        top: 20%;
+        top: 30%;
         left: -40%;
         margin: 0 1rem;
         overflow-y: scroll;
-        & ul{
-            margin: 0.5rem 0 0 2rem;
-            & li{
+        box-shadow: 0 0 5px 5px styles.$bg-wh-op;
+        border-radius: 15px;
+        & ul {
+            margin: 0 0 0 2rem;
+            padding: 0.5rem;
+            & li {
                 color: styles.$text-wh;
             }
         }
     }
-    & .list_skills::-webkit-scrollbar{
+    & .list_skills::-webkit-scrollbar {
         width: 50px;
     }
-    & .list_skills::-webkit-scrollbar-thumb{
-        background: url('../../assets/img/razzo-scroll.png');
+    & .list_skills::-webkit-scrollbar-thumb {
+        background: url("../../assets/img/razzo-scroll.png");
         background-size: 28px;
         background-repeat: no-repeat;
     }
-    & .list_skills::-webkit-scrollbar-track{
+    & .list_skills::-webkit-scrollbar-track {
         background-color: transparent;
     }
-    
 }
 
 /* #region imgs page */
 
-.astro_desk img{
+.astro_desk img {
     width: 300px;
     height: 300px;
     position: absolute;
     top: -70%;
     right: 28%;
 }
-.astro_b_g img{
+.astro_b_g img {
     width: 250px;
     height: 250px;
     position: absolute;
@@ -119,5 +125,88 @@
     right: 30px;
 }
 
-
 /* #endregion imgs page */
+
+/* #region media screen */
+
+@media screen and (max-width: 426px) {
+    .container_biography .title_biography {
+        width: 100%;
+        margin: 0.5rem 0 0;
+        & h1,
+        h2,
+        h3 {
+            color: styles.$text-wh;
+            margin: 0.5rem 0;
+        }
+        & h1 {
+            font-size: 40px;
+            margin: 1rem 0;
+        }
+        & h2 {
+            font-size: 20px;
+            margin: 0 14rem 3.2rem 0;
+        }
+        & h3 {
+            font-size: 10px;
+            color: styles.$text;
+            top: 580%;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+    .description {
+        width: 90%;
+        height: 250px;
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+        overflow-y: scroll;
+        & .title_list {
+            top: 332.5%;
+            left: 0%;
+            margin: 0 0.2rem;
+            background: none;
+            box-shadow: none;
+        }
+        & .list_skills {
+            width: 300px;
+            height: 155px;
+            top: 350%;
+            left: 0%;
+            padding: 0.2rem 0;
+            box-shadow: none;
+            & ul {
+                & li {
+                    color: styles.$text-wh;
+                }
+            }
+        }
+        & .list_skills::-webkit-scrollbar {
+            width: 24px;
+        }
+        & .list_skills::-webkit-scrollbar-thumb {
+            background-size: 24px;
+        }
+    }
+
+    /* #region imgs page */
+
+    .astro_desk img {
+        width: 150px;
+        height: 150px;
+        top: 30%;
+        right: 5%;
+    }
+    .astro_b_g img {
+        width: 150px;
+        height: 166px;
+        top: 470%;
+        right: 50%;
+        transform: translateX(50%);
+        padding: 0 0 0.5rem;
+    }
+
+    /* #endregion imgs page */
+}
+
+/* #endregion media screen */
