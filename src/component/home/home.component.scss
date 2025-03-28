@@ -25,7 +25,7 @@
     bottom: 25%;
     left: 0;
     transform: translateX(-50%);
-    margin: 0 50% 0 0;
+    margin: 0 0 0 50%;
 }
 #page_login_site {
     height: 100%;
@@ -99,7 +99,9 @@
     .title_greatings_2 {
         font-size: 40px;
         bottom: 33%;
-        transform: translateX(50%);
+        left: 25%;
+        transform: translateX(-50%);
+        margin: 0 0 0 50%;
         text-align: center;
     }
     .link_page{
@@ -109,7 +111,7 @@
         font-size: 12px;
         max-width: 426px;
         width: 140px;
-        padding: 4px 0;
+        padding: 6px 0;
         margin: 0 0 0 -0.5rem;
 
     }
