@@ -1,14 +1,14 @@
-@import "../../styles.scss";
+@use "../../styles.scss";
 
 .container_show_card {
     position: relative;
     * {
-        color: $text-wh;
+        color: styles.$text-wh;
     }
     & .img_project {
         width: 600px;
         height: 350px;
-        border: 10px solid $secondary-color;
+        border: 10px solid styles.$secondary-color;
         position: absolute;
         top: 30px;
         left: 50px;
@@ -17,7 +17,7 @@
     & .astronaut {
         width: 600px;
         height: 600px;
-        border-bottom: 10px solid $text-wh;
+        border-bottom: 10px solid styles.$text-wh;
         border-bottom-left-radius: 15px;
         position: absolute;
         top: 0;
@@ -77,7 +77,7 @@
         }
         & .icon_readme:hover{
             border-radius: 50%;
-            box-shadow: 0px 1px 10px 1px $text-wh;
+            box-shadow: 0px 1px 10px 1px styles.$text-wh;
         }
         & a {
             display: inline-block;
@@ -95,6 +95,6 @@
         right: 665px;
     }
     .btn_back:hover {
-        box-shadow: 0px 1px 10px 1px $text-wh;
+        box-shadow: 0px 1px 10px 1px styles.$text-wh;
     }
 }

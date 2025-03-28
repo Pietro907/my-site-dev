@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { GitHubReadme, GitHubRepository, GithubService } from '../../services/github.service';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
+import { NavRouterOutletComponent } from "../nav-router-outlet/nav-router-outlet.component";
 
 
 @Component({
   selector: 'app-table-projects',
-  imports: [RouterLink, RouterLinkActive, TableModule, CommonModule, ButtonModule],
+  imports: [TableModule, CommonModule, ButtonModule, NavRouterOutletComponent],
   templateUrl: './table-projects.component.html',
   styleUrl: './table-projects.component.scss',
   providers: [GithubService],

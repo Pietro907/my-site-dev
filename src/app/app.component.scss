@@ -1,22 +1,11 @@
-@import '../styles.scss';
+@use "../styles.scss";
 
-//bg-header: linear-gradient(to right, red, green);
-$text-center: center;
-$flex: flex;
-$content: space-between;
-$align: center;
-$border1: 1px solid red;
-$border2: 1px solid purple;
-$border3: 1px solid green;
-
-
-
-header{
-    background: linear-gradient(to left, $bg-primary, $bg-secondary);
+header {
+    background: linear-gradient(to left, styles.$bg-primary, styles.$bg-secondary);
     height: 150px;
 }
 main {
-    background: linear-gradient(to left, $bg-primary, $bg-secondary);
+    background: linear-gradient(to left, styles.$bg-primary, styles.$bg-secondary);
     height: calc(100vh - 150px);
 }
 
@@ -26,67 +15,60 @@ main {
     align-items: center;
     height: 100%;
     overflow: hidden;
-    border-top: 2px solid $text-wh;
-    border-bottom: 2px solid $text-wh;
-
-
-    /* & div:first-child, div:last-child {
-        width: 150px;
-        height: 150px;
-        border: 1px solid $text-wh;
-
-        & a > img {
-            width: 150px;
-            height: 150px;
-            border-radius: 30%;
-            padding: 0.5rem;
-        }
-    } */
-   /*  & div:nth-child(2) {
-        border: 1px solid $text-wh;
-        border-left: 1px;
-        border-right: 1px;
-        width: calc(100% - 150px);
-        height: 100%;
-    } */
+    border-top: 2px solid styles.$text-wh;
+    border-bottom: 2px solid styles.$text-wh;
 
     & .logo a img {
         width: 150px;
         height: 150px;
         border-radius: 30%;
         padding: 0.5rem;
-
     }
 }
-.container_title_page{
+.container_title_page {
     position: relative;
-
 }
-.title_page{
-
+.title_page {
     transform: translateY(10%);
 }
-.title_page2{
+.title_page2 {
     width: 100%;
-    color: $text-wh;
+    color: styles.$text-wh;
     position: absolute;
     bottom: 50%;
     left: 50.15%;
     transform: translateX(-50%) translateY(50%);
 }
-.title_page, .title_page2 {
-    text-align: $text-center;
+.title_page,
+.title_page2 {
+    text-align: center;
     font-size: 45px;
 }
 
+/* #region media screen max 400px */
+@media screen and (max-width: 426px) {
+    html, body, header, main {
+        max-width: 426px;
+    }
+    header{
+        height: 80px;
+    }
+    #nav_bar {
+    
+        & .logo a img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .title_page,
+.title_page2 {
+    text-align: center;
+    font-size: 26px;
+}
+}
+
+/* #endregion media screen max 400px */
 
 /* #region debug */
-
-/* #nav_bar,
-.title_page,
-.login,
-.logo {
-    border: $border3;
-} */
 
 /* #endregion debug */

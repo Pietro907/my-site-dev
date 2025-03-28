@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-repo-list',
   templateUrl: './repo-list.component.html',
-  styleUrls: ['./repo-list.component.css'],
+  styleUrls: ['./repo-list.component.scss'],
   imports: [CommonModule]
 })
 export class RepoListComponent implements OnInit {
@@ -18,7 +18,7 @@ export class RepoListComponent implements OnInit {
     this.githubService.getRepositories().subscribe((repos) => {
       this. repositories= repos;
     });
-  }
+  } 
 
   showReadme(repoName: string): void {
     this.githubService.getReadme(repoName).subscribe((readmeData) => {

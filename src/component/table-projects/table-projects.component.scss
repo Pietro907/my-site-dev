@@ -1,5 +1,5 @@
 
-@import '../../styles.scss';
+@use '../../styles.scss';
 
 
 .container_table{
@@ -8,18 +8,18 @@
         text-align: center;
         padding: 1.5rem 0;
         & h2 {
-            color:$text-wh;
+            color: styles.$text-wh;
         }
     }
     & .table-responsive{
         margin: 1.5rem 3rem 0;
         & tr {
-            background-color: $text-wh;
+            background-color: styles.$text-wh;
         }
     }
     & .table-responsive .table {
         & thead tr th, tbody tr td{
-            color: $secondary-color;
+            color: styles.$secondary-color;
             padding: 0.5rem 1rem;
         }
         & tr td:nth-child(1), tr td:nth-child(4), tr td:nth-child(6){
@@ -57,7 +57,7 @@
     align-items: center;
     & a {
         padding: 1.5rem 0.5rem 0.5rem;
-        color: $text-wh;
+        color: styles.$text-wh;
         text-decoration: none;
         font-size: 20px;
     }
@@ -70,4 +70,4 @@
 
 /* #endregion debug */
 
-.red{color: $secondary-color !important;}
+.red{color: styles.$secondary-color !important;}
