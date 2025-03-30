@@ -1,47 +1,45 @@
 @use "../../styles.scss";
 
 #home {
-    display: flex;
-    transform: translateX(-50%);
-    margin: 0 0 0 50%;
-}
-
-.title_greatings,
-.title_greatings_2 {
-    font-size: 60px;
-}
-
-.title_greatings,
-.text,
-.title_greatings_2 {
-    text-align: center;
+    height: 100%;
 }
 .container_title_greatings {
+    width: 100%;
+    padding: 4rem 0 4rem;
+    margin: 0rem 0 0;
     position: relative;
 }
+.title_greatings,
 .title_greatings_2 {
-    color: styles.$text-wh;
-    position: absolute;
-    bottom: 25%;
-    left: 0;
+    text-align: center;
+    font-size: 60px;
     transform: translateX(-50%);
-    margin: 0 0 0 50%;
-}
-#page_login_site {
-    height: 100%;
+    position: absolute;
+    left: 50%;
 }
 
 .title_greatings {
-    padding: 1.5rem 0;
+    top: 50%;
 }
-.link_page {
+.title_greatings_2 {
+    color: styles.$text-wh;
+    top: 45%;
+}
+#welcome {
     margin: 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .text {
+    text-align: center;
     padding: 1rem 0;
     font-size: 25px;
     width: 350px;
@@ -61,7 +59,7 @@
 .img_welcome {
     display: block;
     width: 500px;
-    height: 426px;
+    height: 415px;
     border-bottom: 10px solid styles.$text-wh;
     border-bottom-left-radius: 15px;
     border-right: 10px solid styles.$secondary-color;
@@ -69,13 +67,13 @@
     & .which_one {
         color: styles.$text-wh;
         position: absolute;
-        top: 61.4%;
+        top: 62%;
         left: 31%;
         animation: pulse 2s infinite;
     }
     & .image_login {
         width: 500px;
-        height: 426px;
+        height: 425px;
         border-radius: 20px;
         object-fit: cover;
     }
@@ -90,22 +88,15 @@
 }
 
 @media screen and (max-width: 426px) {
-
-    .title_greatings {
-        padding: 4rem 0 3rem;
+    .container_title_greatings {
+        max-width: 426px;
     }
-
     .title_greatings,
     .title_greatings_2 {
-        font-size: 40px;
-        bottom: 33%;
-        left: 25%;
-        transform: translateX(-50%);
-        margin: 0 0 0 50%;
-        text-align: center;
+        font-size: 30px;
     }
-    .link_page{
-       margin: 8rem 0 0;
+    .title_greatings_2 {
+        top: 47.5%;
     }
     .text {
         font-size: 12px;
@@ -113,10 +104,6 @@
         width: 140px;
         padding: 6px 0;
         margin: 0 0 0 -0.5rem;
-
-    }
-    #page_login_site {
-        margin: 0 0 0 -4.8rem;
     }
     .img_welcome {
         display: block;
@@ -129,7 +116,6 @@
             font-size: 5px;
             top: 64%;
             left: 32.5%;
-            
         }
         & .image_login {
             width: 180px;
