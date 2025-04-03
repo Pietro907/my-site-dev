@@ -19,7 +19,7 @@
         margin: 3rem 0;
     }
 }
-.sub_title{
+.sub_title {
     width: 850px;
     margin: 0 auto;
     display: flex;
@@ -33,6 +33,8 @@
     margin: 2.5rem auto;
     background: styles.$bg-wh-op;
     padding: 1rem;
+    border: 1px solid styles.$bg-wh-op;
+
     border-radius: 15px;
     box-shadow: 0 0 5px 5px styles.$bg-wh-op;
     position: relative;
@@ -49,6 +51,7 @@
     width: 300px;
     & .title_list {
         font-size: 25px;
+        border: 1px solid styles.$bg-wh-op;
         box-shadow: 0 -5px 5px 5px styles.$bg-wh-op;
         background: styles.$bg-wh-op;
         border-top-left-radius: 15px;
@@ -64,6 +67,8 @@
         height: 155px;
         font-size: 20px;
         overflow-y: scroll;
+        border: 1px solid styles.$bg-wh-op;
+
         box-shadow: 0 0 5px 5px styles.$bg-wh-op;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -92,7 +97,7 @@
     justify-content: space-between;
     align-items: center;
     width: 850px;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
 /* #region imgs page */
@@ -104,7 +109,7 @@
     top: -135px;
     right: 120px;
 }
-.astro_b_g{
+.astro_b_g {
     position: relative;
     & img {
         width: 250px;
@@ -151,20 +156,21 @@
             margin: 0.5rem 0;
         }
         & h1 {
-            font-size: 40px;
+            font-size: 38px;
             margin: 1rem 0;
         }
         & h2 {
             font-size: 20px;
-            margin: 0 14rem 3.2rem 0;
         }
-        & h3 {
-            font-size: 10px;
-            color: styles.$text;
-            top: 580%;
-            right: 50%;
-            transform: translateX(50%);
-        }
+    }
+
+    .sub_title {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
     }
     .description {
         width: 90%;
@@ -172,51 +178,37 @@
         margin: 1.5rem auto;
         padding: 0.5rem;
         overflow-y: scroll;
-        & .title_list {
-            top: 332.5%;
-            left: 0%;
-            margin: 0 0.2rem;
-            background: none;
-            box-shadow: none;
+    }
+    .under_description {
+        width: 90%;
+        padding: 1rem 0 2rem;
+        & .skill_list{
+            padding: 0 1.5rem 0 0;
+        & .list_skills{
+            height: 120px;
         }
-        & .list_skills {
-            width: 300px;
-            height: 155px;
-            top: 350%;
-            left: 0%;
-            padding: 0.2rem 0;
-            box-shadow: none;
-            & ul {
-                & li {
-                    color: styles.$text-wh;
-                }
-            }
-        }
-        & .list_skills::-webkit-scrollbar {
-            width: 24px;
-        }
-        & .list_skills::-webkit-scrollbar-thumb {
-            background-size: 24px;
         }
     }
 
     /* #region imgs page */
 
     .astro_desk img {
-        width: 150px;
-        height: 150px;
-        top: 30%;
-        right: 5%;
+        width: 130px;
+        height: 130px;
+        top: -35px;
+        right: 50px;
     }
-    .astro_b_g img {
-        width: 150px;
-        height: 166px;
-        top: 470%;
-        right: 50%;
-        transform: translateX(50%);
-        padding: 0 0 0.5rem;
+    .astro_b_g {
+        & img {
+            width: 150px;
+            height: 160px;
+        }
+        & h3 {
+            font-size: 12px;
+            top: 100px;
+            right: 51px;
+        }
     }
-
     /* #endregion imgs page */
 }
 
