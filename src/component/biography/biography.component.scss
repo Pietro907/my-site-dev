@@ -8,7 +8,6 @@
     width: 100%;
     margin: 2rem 0 0;
     text-align: center;
-    position: relative;
     & h1,
     h2,
     h3 {
@@ -17,40 +16,21 @@
     }
     & h1 {
         font-size: 40px;
-        margin: 1.5rem 0 2rem;
-    }
-    & h2 {
-        margin: 0 16rem 0 0;
-    }
-    & h3 {
-        margin: 0 0 0 17rem;
-        color: styles.$secondary-color;
-        text-align: center;
-        position: absolute;
-        top: 430%;
-        right: 7.6%;
-    }
-    & a {
-        color: styles.$secondary-color;
-        text-decoration: none;
-        text-align: center;
-        animation: pulse 4s infinite;
-    }
-    @keyframes pulse {
-        0% {
-            opacity: 0;
-        }
-        50% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
+        margin: 3rem 0;
     }
 }
-.description {
-    margin: 2.5rem auto;
+.sub_title{
     width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.description {
+    width: 850px;
+    margin: 2.5rem auto;
     background: styles.$bg-wh-op;
     padding: 1rem;
     border-radius: 15px;
@@ -64,29 +44,29 @@
         text-decoration: underline;
         font-weight: 900;
     }
-
+}
+.skill_list {
+    width: 300px;
     & .title_list {
-        position: absolute;
-        top: 18%;
-        left: -40%;
-        margin: 0 1rem;
         font-size: 25px;
-        box-shadow: 0 0 5px 5px styles.$bg-wh-op;
+        box-shadow: 0 -5px 5px 5px styles.$bg-wh-op;
         background: styles.$bg-wh-op;
-        border-radius: 15px;
-        padding: 0 0.5rem;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 0 0.5rem 0.5rem;
+        & span {
+            color: styles.$secondary-color;
+            text-decoration: underline;
+            font-weight: 900;
+        }
     }
     & .list_skills {
-        width: 300px;
         height: 155px;
         font-size: 20px;
-        position: absolute;
-        top: 30%;
-        left: -40%;
-        margin: 0 1rem;
         overflow-y: scroll;
         box-shadow: 0 0 5px 5px styles.$bg-wh-op;
-        border-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         & ul {
             margin: 0 0 0 2rem;
             padding: 0.5rem;
@@ -107,6 +87,13 @@
         background-color: transparent;
     }
 }
+.under_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 850px;
+    margin: 0 auto;    
+}
 
 /* #region imgs page */
 
@@ -114,15 +101,39 @@
     width: 300px;
     height: 300px;
     position: absolute;
-    top: -70%;
-    right: 28%;
+    top: -135px;
+    right: 120px;
 }
-.astro_b_g img {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 300px;
-    right: 30px;
+.astro_b_g{
+    position: relative;
+    & img {
+        width: 250px;
+        height: 250px;
+    }
+    & h3 {
+        color: styles.$secondary-color;
+        text-align: center;
+        position: absolute;
+        top: 160px;
+        right: 87.5px;
+    }
+    & a {
+        color: styles.$secondary-color;
+        text-decoration: none;
+        text-align: center;
+        animation: pulse 4s infinite;
+    }
+    @keyframes pulse {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
 }
 
 /* #endregion imgs page */
